@@ -8,7 +8,7 @@ Ted Yapo has this great [TritiLED project](https://hackaday.io/project/11864-tri
 
 The secret? Running the LED by putting it in flyback with an inductor.  This creates a (nearly) lossless store for the energy pulses that a) is fairly easy to make tiny and b) also doubles as a step-up voltage converter so it will run almost any LED or chain. 
 
-Varying pulse durations change the brightness, but and also the current consumption.  The AVR is in power-down mode, periodically woken up by the watchdog timer.  If you can tolerate some blinking, you could cut the AVR's power budget in half or less by playing with the watchdog period.  
+Varying pulse durations change the brightness and also the current consumption.  The AVR is in power-down mode, periodically woken up by the watchdog timer.  If you can tolerate some blinking, you could cut the AVR's power budget in half or less by playing with the watchdog period.  
 
 The version I settled on uses 10 uA, and seems to run nearly every LED I've thrown at it, at various brightnesses.  The PCB in "hardware" has extra pads for testing out SMD LEDs, connecting a programmer to the ATtiny45, and tons of wasted space for you to optimize if you're into that.
 
