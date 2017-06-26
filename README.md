@@ -5,6 +5,10 @@ Ted Yapo has this great [TritiLED project](https://hackaday.io/project/11864-tri
 The secret? Running the LED by putting it in flyback with an inductor.  This creates a (nearly) lossless store for the energy pulses that a) is fairly easy to make tiny and b) also doubles as a step-up voltage converter so it will run almost any LED or chain.
 
 The circuit couldn't be simpler.  It's meant to be adapted to parts on hand.  Build one, deploy, enjoy.  
+Check out the docs directory for schematics.  Code is in code.  
+
+![schematic](https://github.com/hexagon5un/everled/docs/everled.png)
+
 
 You can read about its development over [on Hackaday.io](https://hackaday.io/project/25584-attiny45-everled).
 
