@@ -1,0 +1,257 @@
+EESchema Schematic File Version 2
+LIBS:everled
+LIBS:everled-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ISP_6_Reset P1
+U 1 1 594D7C00
+P 3600 2750
+F 0 "P1" H 3600 3100 50  0000 C CNN
+F 1 "ISP_6_Reset" V 3700 2750 50  0000 C CNN
+F 2 "everled-footprints:ISP6-Inline-Reset" H 3600 2750 60  0001 C CNN
+F 3 "" H 3600 2750 60  0000 C CNN
+	1    3600 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L ATTINY45-20PU U1
+U 1 1 594D7C53
+P 5750 2750
+F 0 "U1" H 4600 3150 50  0000 C CNN
+F 1 "ATTINY45-20PU" H 6750 2350 50  0000 C CNN
+F 2 "everled-footprints:DIP-8_W7.62mm_LongPads" H 6750 2750 50  0001 C CIN
+F 3 "" H 5750 2750 50  0001 C CNN
+	1    5750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 594D7DA4
+P 4150 2800
+F 0 "#PWR01" H 4150 2650 50  0001 C CNN
+F 1 "VCC" H 4150 2950 50  0000 C CNN
+F 2 "" H 4150 2800 50  0001 C CNN
+F 3 "" H 4150 2800 50  0001 C CNN
+	1    4150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 594D7DBC
+P 4150 2900
+F 0 "#PWR02" H 4150 2650 50  0001 C CNN
+F 1 "GND" H 4150 2750 50  0000 C CNN
+F 2 "" H 4150 2900 50  0001 C CNN
+F 3 "" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 594D7DF9
+P 7300 2500
+F 0 "#PWR03" H 7300 2350 50  0001 C CNN
+F 1 "VCC" H 7300 2650 50  0000 C CNN
+F 2 "" H 7300 2500 50  0001 C CNN
+F 3 "" H 7300 2500 50  0001 C CNN
+	1    7300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 594D7E0A
+P 7300 3000
+F 0 "#PWR04" H 7300 2750 50  0001 C CNN
+F 1 "GND" H 7300 2850 50  0000 C CNN
+F 2 "" H 7300 3000 50  0001 C CNN
+F 3 "" H 7300 3000 50  0001 C CNN
+	1    7300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 594D7E1B
+P 7300 2750
+F 0 "C1" H 7325 2850 50  0000 L CNN
+F 1 "1uF" H 7325 2650 50  0000 L CNN
+F 2 "everled-footprints:C_1206_HandSoldering" H 7338 2600 50  0001 C CNN
+F 3 "" H 7300 2750 50  0001 C CNN
+	1    7300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q1
+U 1 1 594D7E94
+P 5100 4350
+F 0 "Q1" H 5300 4400 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 5300 4300 50  0000 L CNN
+F 2 "everled-footprints:SOT-23_Handsoldering" H 5300 4450 50  0001 C CNN
+F 3 "" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 594D7F47
+P 5200 3450
+F 0 "#PWR05" H 5200 3300 50  0001 C CNN
+F 1 "VCC" H 5200 3600 50  0000 C CNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L1
+U 1 1 594D7FBC
+P 5200 3850
+F 0 "L1" V 5150 3850 50  0000 C CNN
+F 1 "0.15 mH" V 5275 3850 50  0000 C CNN
+F 2 "everled-footprints:Choke_Toroid_5x10mm_Vertical" H 5200 3850 50  0001 C CNN
+F 3 "" H 5200 3850 50  0001 C CNN
+	1    5200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 594D801C
+P 5200 4750
+F 0 "#PWR06" H 5200 4500 50  0001 C CNN
+F 1 "GND" H 5200 4600 50  0000 C CNN
+F 2 "" H 5200 4750 50  0001 C CNN
+F 3 "" H 5200 4750 50  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 594D8063
+P 5600 3850
+F 0 "D1" H 5600 3950 50  0000 C CNN
+F 1 "LED" H 5600 3750 50  0000 C CNN
+F 2 "everled-footprints:LED_D5.0mm" H 5600 3850 50  0001 C CNN
+F 3 "" H 5600 3850 50  0001 C CNN
+	1    5600 3850
+	0    1    1    0   
+$EndComp
+Text Notes 3500 3800 0    60   ~ 0
+1-4 us pulses \nevery 10-30 ms\nseason to taste
+$Comp
+L CONN_01X02 J2
+U 1 1 594D8548
+P 7800 2750
+F 0 "J2" H 7800 2900 50  0000 C CNN
+F 1 "Power" V 7900 2750 50  0000 C CNN
+F 2 "everled-footprints:Pin_Header_Straight_1x02_Pitch2.54mm" H 7800 2750 50  0001 C CNN
+F 3 "" H 7800 2750 50  0001 C CNN
+	1    7800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2500 4400 2500
+Wire Wire Line
+	4400 2600 3800 2600
+Wire Wire Line
+	3800 2700 4400 2700
+Wire Wire Line
+	4400 3000 3800 3000
+Wire Wire Line
+	3800 2800 4150 2800
+Wire Wire Line
+	4150 2900 3800 2900
+Wire Wire Line
+	7100 2500 7300 2500
+Wire Wire Line
+	7300 2500 7300 2600
+Wire Wire Line
+	7300 2900 7300 3000
+Wire Wire Line
+	7300 3000 7100 3000
+Wire Wire Line
+	4400 2900 4300 2900
+Wire Wire Line
+	4300 2900 4300 4400
+Wire Wire Line
+	4300 4350 4900 4350
+Wire Wire Line
+	5200 4550 5200 4750
+Wire Wire Line
+	5200 4000 5200 4150
+Wire Wire Line
+	5200 4100 5900 4100
+Wire Wire Line
+	5600 4100 5600 4000
+Connection ~ 5200 4100
+Wire Wire Line
+	5600 3700 5600 3600
+Wire Wire Line
+	5200 3600 5900 3600
+Wire Wire Line
+	5200 3450 5200 3700
+Connection ~ 5200 3600
+Wire Wire Line
+	7300 2550 7600 2550
+Wire Wire Line
+	7600 2550 7600 2700
+Connection ~ 7300 2550
+Wire Wire Line
+	7300 2950 7600 2950
+Wire Wire Line
+	7600 2950 7600 2800
+Connection ~ 7300 2950
+$Comp
+L R R1
+U 1 1 594EBEBC
+P 4300 4550
+F 0 "R1" V 4380 4550 50  0000 C CNN
+F 1 "100K" V 4300 4550 50  0000 C CNN
+F 2 "everled-footprints:R_1206_HandSoldering" V 4230 4550 50  0001 C CNN
+F 3 "" H 4300 4550 50  0001 C CNN
+	1    4300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 594EBF0D
+P 4300 4750
+F 0 "#PWR07" H 4300 4500 50  0001 C CNN
+F 1 "GND" H 4300 4600 50  0000 C CNN
+F 2 "" H 4300 4750 50  0001 C CNN
+F 3 "" H 4300 4750 50  0001 C CNN
+	1    4300 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4700 4300 4750
+Connection ~ 4300 4350
+$Comp
+L TEST_2P J1
+U 1 1 594EC405
+P 5900 3850
+F 0 "J1" H 5900 3910 50  0000 C CNN
+F 1 "TEST_2P" H 5900 3780 50  0000 C CNN
+F 2 "everled-footprints:R_1206_HandSoldering" H 5900 3850 50  0001 C CNN
+F 3 "" H 5900 3850 50  0001 C CNN
+	1    5900 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 3600 5900 3650
+Connection ~ 5600 3600
+Wire Wire Line
+	5900 4100 5900 4050
+Connection ~ 5600 4100
+$EndSCHEMATC
