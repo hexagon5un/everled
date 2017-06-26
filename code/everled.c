@@ -14,8 +14,7 @@
 
 ISR(WDT_vect){
 	setBit(LED_PORT, LED);
-	// can use _delay_us() here to make brighter  
-	_delay_us(15); 
+	_delay_us(15); // divide by 8, add in some fudge-factors
 	// 6 us / 8 = 7.8 uA  // 60 us / 8 = 60 uA
 	// 15 us / 8 = 10.7 uA  (measured 2.1 us) 
 	clearBit(LED_PORT, LED);
@@ -24,6 +23,11 @@ ISR(WDT_vect){
 int main(void) {
     // Just in case watchdog gets used as reset source, turn it off	
 	wdt_disable();
+
+	clock_prescale_set(clock_div_1);  // Run at 8 MHz
+	// But note: defined F_CPU in the Makefile at 1 MHZ, 
+	// so actual delays are ~8x as long
+	// This allows sub-2us delays with additional granularity
 	
 	// init WDT for interrupts, not reset
 	setBit(WDTCR, WDIE); // interrupt enable

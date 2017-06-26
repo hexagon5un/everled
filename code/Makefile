@@ -64,7 +64,7 @@ LDFLAGS += -Wl,--gc-sections
 ## LDFLAGS += -Wl,-u,vfprintf -lprintf_min      ## for smaller printf
 TARGET_ARCH = -mmcu=$(MCU)
 
-all: $(TARGET).hex 
+all: $(TARGET).hex flash
 
 ## Explicit pattern rules:
 ##  To make .o files from .c files 
