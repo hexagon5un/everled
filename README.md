@@ -1,5 +1,7 @@
 ## ATtiny45 EverLED
 
+Run and LED dimly on a few microamps, and you can run them for years off of a button cell.  I one, and now I don't stub my to on the corner of my bed at night anymore.  And then I made a few more because they're fun.
+
 Ted Yapo has this great [TritiLED project](https://hackaday.io/project/11864-tritiled), and I basically just ripped it off with whatever parts I had on hand.  While he aims at making a dim LED flashlight that will last for 10+ or even 25 years, I'm fine with two on a 2032 coin cell, as long as it runs whatever LEDs I've got on hand and an ATtiny45.  
 
 ![red_version](https://raw.githubusercontent.com/hexagon5un/everled/master/docs/DSCF9903.JPG)
