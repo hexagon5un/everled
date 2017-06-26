@@ -7,7 +7,8 @@ The secret? Running the LED by putting it in flyback with an inductor.  This cre
 The circuit couldn't be simpler.  It's meant to be adapted to parts on hand.  Build one, deploy, enjoy.  
 Check out the docs directory for schematics.  Code is in code.  
 
-![schematic](https://github.com/hexagon5un/everled/docs/everled.png)
+![schematic](https://raw.githubusercontent.com/hexagon5un/everled/master/docs/everled.png)
+
 
 
 You can read about its development over [on Hackaday.io](https://hackaday.io/project/25584-attiny45-everled).
