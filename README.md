@@ -6,9 +6,11 @@ Ted Yapo has this great [TritiLED project](https://hackaday.io/project/11864-tri
 
 ![red_version](https://raw.githubusercontent.com/hexagon5un/everled/master/docs/DSCF9903.JPG)
 
-The secret? Running the LED by putting it in flyback with an inductor.  This creates a (nearly) lossless store for the energy pulses that a) is controllable over a very wide range and b) also doubles as a step-up voltage converter so it will run almost any LED or chain. 
+The secret? Running the LED by putting it in flyback with an inductor.  This creates a (nearly) lossless store for the energy pulses that a) is controllable over a very wide range b) also doubles as a step-up voltage converter so it will run almost any LED or chain and c) provides short pulses of comparatively high current, which might run your LED more efficiently that simple PWM.  
 
-Varying pulse durations change the brightness and also the current consumption.  The AVR is in power-down mode, periodically woken up by the watchdog timer.  If you can tolerate some blinking, you could cut the AVR's power budget in half or less by playing with the watchdog period.  
+Varying the pulse duration changes the current consumption, which is almost entirely independent of the LED that you connect.  How bright the LED is depends on it's particulars.  See Ted's project for great detail on LED efficiency curves. Short version: around a milliamp is good for many LEDs.
+
+The AVR draws as little current as possible by spending almost all of the time in power-down mode, being periodically woken up by the watchdog timer.  The ATtiny45 is not a particularly low-power chip, but it's almost always sleeping, so meh.  You can probably trim a few more microamps (25% of the power budget?!?!) by using a better chip.   
 
 The version I settled on uses 10 uA, and seems to run nearly every LED I've thrown at it, at various brightnesses.  The PCB in "hardware" has extra pads for testing out SMD LEDs, connecting a programmer to the ATtiny45, and tons of wasted space for you to optimize if you're into that.
 
